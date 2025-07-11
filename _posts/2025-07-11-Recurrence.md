@@ -8,25 +8,17 @@ tags:
 
 ### 🔹 Step 1: Start with the recurrence relation
 
-We are given:
-
 $$
 A_n = 1 + \frac{2}{N} \sum_{j=1}^{N} A_{j-1}
 $$
-
-This expresses $A_n$ in terms of the sum of previous values $A_{j-1}$.
 
 ---
 
 ### 🔹 Step 2: Multiply both sides by $N$
 
-To eliminate the denominator:
-
 $$
 N A_n = N + 2 \sum_{j=1}^{N} A_{j-1}
 $$
-
-This is a cleaner form that will help us compare with the previous term.
 
 ---
 
@@ -54,13 +46,6 @@ $$
 N A_n - (N-1) A_{n-1} = N - (N-1) + 2 \left( \sum_{j=1}^{N} A_{j-1} - \sum_{j=1}^{N-1} A_{j-1} \right)
 $$
 
-Simplify:
-
-- Left side: $N A_n - (N-1) A_{n-1}$
-- Right side: $1 + 2 A_{N-1}$
-
-So:
-
 $$
 N A_n = (N-1) A_{n-1} + 1 + 2 A_{N-1}
 $$
@@ -75,13 +60,11 @@ $$
 N A_n = (N+1) A_{n-1} + 1
 $$
 
-This is a **clean recurrence** involving only $A_n$ and $A_{n-1}$.
-
 ---
 
 ### 🔹 Step 6: Normalize by dividing both sides by $N+1$
 
-Let’s define:
+Define:
 
 $$
 B_n = \frac{A_n}{N+1}
