@@ -14,11 +14,11 @@ $$
 A_n = 1 + \frac{2}{N} \sum_{j=1}^{N} A_{j-1}
 $$
 
-This expresses $ A_n $ in terms of the sum of previous values $ A_{j-1} $.
+This expresses $A_n$ in terms of the sum of previous values $A_{j-1}$.
 
 ---
 
-### 🔹 Step 2: Multiply both sides by $ N $
+### 🔹 Step 2: Multiply both sides by $N$
 
 To eliminate the denominator:
 
@@ -30,7 +30,7 @@ This is a cleaner form that will help us compare with the previous term.
 
 ---
 
-### 🔹 Step 3: Write the same equation for $ n-1 $
+### 🔹 Step 3: Write the same equation for $n-1$
 
 Now write the recurrence for $ A_{n-1} $:
 
@@ -38,7 +38,7 @@ $$
 A_{n-1} = 1 + \frac{2}{N-1} \sum_{j=1}^{N-1} A_{j-1}
 $$
 
-Multiply both sides by $ N-1 $:
+Multiply both sides by $N-1$:
 
 $$
 (N-1) A_{n-1} = (N-1) + 2 \sum_{j=1}^{N-1} A_{j-1}
