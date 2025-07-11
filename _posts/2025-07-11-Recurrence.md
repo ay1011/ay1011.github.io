@@ -14,7 +14,7 @@ $$
 A_n = 1 + \frac{2}{N} \sum_{j=1}^{N} A_{j-1}
 $$
 
-This expresses \( A_n \) in terms of the sum of previous values \( A_{j-1} \).
+This expresses $ A_n $ in terms of the sum of previous values $ A_{j-1} $.
 
 ---
 
