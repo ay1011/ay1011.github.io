@@ -1,7 +1,5 @@
 ---
 title: "Post: Recurrence"
-layout: single
-mathjax: true
 categories:
   - Blog
 tags:
