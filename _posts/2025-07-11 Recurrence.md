@@ -128,5 +128,3 @@ A_N = (N+1) \cdot \left(1 - \frac{1}{N+1} \right) = N
 ---
 
 
-> And this is how a quote looks.
-
