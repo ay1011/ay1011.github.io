@@ -4,7 +4,7 @@ categories:
   - Blog
 tags:
   - Recurrence
-  
+---
 
 ### 🔹 Step 1: Start with the recurrence relation
 
