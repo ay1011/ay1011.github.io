@@ -1,5 +1,5 @@
 ---
-title: "Post: General Formula for Secand Integral"
+title: "Post: General Formula for Secant Integral"
 categories:
   - Blog
 tags:
@@ -45,12 +45,15 @@ $$
 
 $$
 \begin{aligned}
-\int s^{11}  dx &= \frac{1}{10} t^9 s + \frac{9}{10} \int s^9 \, dx \\
-\int s^9  dx &= \frac{1}{8} t^7 s^3 + \frac{7}{8} \int s^7 \, dx \\
-\int s^7 dx &= \frac{1}{6} t^5 s^5 + \frac{5}{6} \int s^5 \, dx \\
-\int s^5 dx &= \frac{1}{4} t^3 s^7 + \frac{3}{4} \int s^3 \, dx \\
-\int s^3 dx &= \frac{1}{2} t s^9 + \frac{1}{2} \int s \, dx \\
-\int s dx &= \ln|s + t| + C
+\int \sec^{11}(x) \, dx &= \frac{1}{10} \tan^9(x) \sec(x) + \frac{9}{10} \int \sec^9(x) \, dx \\
+&= \frac{1}{10} \tan^9(x) \sec(x) + \frac{9}{10} \left( \frac{1}{8} \tan^7(x) \sec^3(x) + \frac{7}{8} \int \sec^7(x) \, dx \right) \\
+&= \frac{1}{10} \tan^9(x) \sec(x) + \frac{9}{10 \cdot 8} \tan^7(x) \sec^3(x) + \frac{9 \cdot 7}{10 \cdot 8} \int \sec^7(x) \, dx \\
+&= \frac{1}{10} \tan^9(x) \sec(x) + \frac{9}{10 \cdot 8} \tan^7(x) \sec^3(x) + \frac{9 \cdot 7}{10 \cdot 8} \left( \frac{1}{6} \tan^5(x) \sec^5(x) + \frac{5}{6} \int \sec^5(x) \, dx \right) \\
+&= \frac{1}{10} \tan^9(x) \sec(x) + \frac{9}{10 \cdot 8} \tan^7(x) \sec^3(x) + \frac{9 \cdot 7}{10 \cdot 8 \cdot 6} \tan^5(x) \sec^5(x) + \frac{9 \cdot 7 \cdot 5}{10 \cdot 8 \cdot 6} \int \sec^5(x) \, dx \\
+&= \frac{1}{10} \tan^9(x) \sec(x) + \frac{9}{10 \cdot 8} \tan^7(x) \sec^3(x) + \frac{9 \cdot 7}{10 \cdot 8 \cdot 6} \tan^5(x) \sec^5(x) + \frac{9 \cdot 7 \cdot 5}{10 \cdot 8 \cdot 6} \left( \frac{1}{4} \tan^3(x) \sec^7(x) + \frac{3}{4} \int \sec^3(x) \, dx \right) \\
+&= \frac{1}{10} \tan^9(x) \sec(x) + \frac{9}{10 \cdot 8} \tan^7(x) \sec^3(x) + \frac{9 \cdot 7}{10 \cdot 8 \cdot 6} \tan^5(x) \sec^5(x) + \frac{9 \cdot 7 \cdot 5}{10 \cdot 8 \cdot 6 \cdot 4} \tan^3(x) \sec^7(x) + \frac{9 \cdot 7 \cdot 5 \cdot 3}{10 \cdot 8 \cdot 6 \cdot 4} \int \sec^3(x) \, dx \\
+&= \frac{1}{10} \tan^9(x) \sec(x) + \frac{9}{10 \cdot 8} \tan^7(x) \sec^3(x) + \frac{9 \cdot 7}{10 \cdot 8 \cdot 6} \tan^5(x) \sec^5(x) + \frac{9 \cdot 7 \cdot 5}{10 \cdot 8 \cdot 6 \cdot 4} \tan^3(x) \sec^7(x) + \frac{9 \cdot 7 \cdot 5 \cdot 3}{10 \cdot 8 \cdot 6 \cdot 4 \cdot 2} \tan(x) \sec^9(x) \\
+&\quad + \frac{9 \cdot 7 \cdot 5 \cdot 3 \cdot 1}{10 \cdot 8 \cdot 6 \cdot 4 \cdot 2} \ln|\sec(x) + \tan(x)| + C
 \end{aligned}
 $$
 
